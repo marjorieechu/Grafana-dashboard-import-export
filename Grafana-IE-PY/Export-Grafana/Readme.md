@@ -19,3 +19,5 @@ It fetches all the dashboards using the get_dashboards() function, and then iter
 The script will fetch all dashboards from Grafana and export them to the Dashboard/ folder.
 
 It will continue running in a loop, fetching and exporting dashboards every 24 hours.
+
+Run the script: python export.py

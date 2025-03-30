@@ -18,15 +18,21 @@ To build and run the Bash script using Docker:
 Place your Bash script (import.sh) in the same directory as the Dockerfile.
 
 Build the Docker image:
-docker build -t grafana-dashboard-importer .
+docker build -t grafana-dashboard-import-image .
 Run the container:
-docker run -v /path/to/dashboard/folder:/app/Dashboard grafana-dashboard-importer
+docker run -v /path/to/dashboard/folder:/app/Dashboard grafana-dashboard-import image =
+docker run --name Dashboard-bash-import -v "$(PWD)/../Dashboard:/app/Dashboard" grafana-dashboard-import-image
+
 This will allow the Bash script to access the exported dashboards folder from your local machine while running inside a Docker container.
 
 In summary, You might want to use Docker in these cases:
 
-If you need a consistent environment (e.g., Python version, installed dependencies, etc.) across different machines.
+If you need a consistent environment across different machines.
 
 If you want to avoid polluting your local environment with dependencies that only the script needs.
 
 If you want to automate the process and run the scripts on a cloud or virtual machine without worrying about the underlying OS.
+
+The situation is same for ecporting dashboards using the bash script in a docker environment. use the following commands
+docker build -t grafana-dashboard-export-image .
+docker run --name Dashboard-bash-export -v "$(PWD)/../Dashboard:/app/Dashboard" grafana-dashboard-export-image

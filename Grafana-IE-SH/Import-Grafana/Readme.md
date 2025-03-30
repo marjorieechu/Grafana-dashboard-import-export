@@ -20,7 +20,7 @@ Replace your_grafana_api_key with your actual Grafana API key.
 
 Ensure that the Dashboard/ folder contains the JSON files you want to import.
 
-Save this script as import_dashboards.sh.
+Save this script as import.sh.
 
 Make it executable: chmod +x import_dashboards.sh
-Run the script: ./import_dashboards.sh
+Run the script: ./impor.sh

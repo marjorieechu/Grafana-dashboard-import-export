@@ -21,4 +21,4 @@ Place all the exported .json files in the Dashboard/ folder.
 
 Update the grafana_url and grafana_api_key with the correct values.
 
-Run the script: python import_dashboards.py
+Run the script: python import.py

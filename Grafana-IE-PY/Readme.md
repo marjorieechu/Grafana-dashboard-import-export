@@ -22,4 +22,18 @@ Place your Python script (export.py) and the requirements.txt file in the same d
 Build the Docker image: docker build -t grafana-dashboard-exporter-image .
 Run the container:
 docker run -v /path/to/dashboard/folder:/app/Dashboard grafana-dashboard-exporter
+docker run --name Dashboard-python-export -v "$(PWD)/../Dashboard:/app/Dashboard" grafana-dashboard-exporter-image
+
 This will mount the Dashboard folder on your local machine to the container and allow the script to access the exported dashboards.
+
+In summary, You might want to use Docker in these cases:
+
+If you need a consistent environment (e.g., Python version, installed dependencies, etc.) across different machines.
+
+If you want to avoid polluting your local environment with dependencies that only the script needs.
+
+If you want to automate the process and run the scripts on a cloud or virtual machine without worrying about the underlying OS.
+
+The case is same for importing the dashboards. Use commands:
+docker build -t grafana-dashboard-importer-image .
+docker run --name Dashboard-python-import -v "$(PWD)/../Dashboard:/app/Dashboard" grafana-dashboard-importer-image
