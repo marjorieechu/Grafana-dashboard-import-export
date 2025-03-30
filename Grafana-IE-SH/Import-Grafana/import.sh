@@ -1,7 +1,7 @@
 #!/bin/bash
 
-GRAFANA_URL="http://localhost:3000"  # Change to your Grafana URL
-GRAFANA_API_KEY="glsa_7zXqzuhms25eW02UkHOixp6DuiU9Llkd_361860ef"  # Replace with your Grafana API key
+GRAFANA_URL=$GRAFANA_URL  # Change to your Grafana URL
+GRAFANA_API_KEY=$GRAFANA_API_KEY  # Replace with your Grafana API key
 DASHBOARD_FOLDER="Dashboard"
 
 # Function to import a dashboard
