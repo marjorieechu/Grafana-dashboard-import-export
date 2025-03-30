@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GRAFANA_URL="http://localhost:3000"  # Change to your Grafana URL
-GRAFANA_API_KEY="your_grafana_api_key"  # Replace with your Grafana API key
+GRAFANA_API_KEY="glsa_7zXqzuhms25eW02UkHOixp6DuiU9Llkd_361860ef"  # Replace with your Grafana API key
 EXPORT_FOLDER="Dashboard"
 POLLING_INTERVAL=86400  # 24 hours
 

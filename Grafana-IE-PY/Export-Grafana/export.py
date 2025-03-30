@@ -3,7 +3,7 @@ import requests
 import time
 
 grafana_url = "http://localhost:3000"  # Change to your Grafana URL
-grafana_api_key = "your_grafana_api_key"  # Replace with your Grafana API key
+grafana_api_key = "glsa_7zXqzuhms25eW02UkHOixp6DuiU9Llkd_361860ef"  # Replace with your Grafana API key
 export_folder = "Dashboard"
 polling_interval = 86400  # Export every 24 hours
 
