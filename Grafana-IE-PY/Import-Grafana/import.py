@@ -2,7 +2,7 @@ import os
 import requests
 
 grafana_url = "http://localhost:3000"  # Change to your Grafana URL
-grafana_api_key = "******"  # Replace with your Grafana API key
+grafana_api_key = os.getenv("GRAFANA_API_KEY")   # Fetch from environment variable # Replace with your Grafana API key
 dashboard_folder = "Dashboard"
 
 # Ensure the folder exists

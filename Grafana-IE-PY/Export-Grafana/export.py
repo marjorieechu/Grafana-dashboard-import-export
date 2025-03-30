@@ -3,7 +3,7 @@ import requests
 import time
 
 grafana_url = "http://localhost:3000"  # Change to your Grafana URL
-grafana_api_key = "*******"  # Replace with your Grafana API key
+grafana_api_key = os.getenv("GRAFANA_API_KEY")   # Fetch from environment variable # Replace with your Grafana API key
 export_folder = "Dashboard"
 polling_interval = 86400  # Export every 24 hours
 
